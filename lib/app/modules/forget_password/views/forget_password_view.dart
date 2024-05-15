@@ -47,7 +47,9 @@ class ForgetPasswordView extends GetView<ForgetPasswordController> {
                       )
                     )
                   ),
-                  const SizedBox(height: 100,),
+                  const SizedBox(height: 30,),
+                  TextButton(onPressed: () => Get.to(() => LoginScreenView()), child: Text("Kembali ke Login", style: GoogleFonts.poppins(textStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Colors.white)),)),
+                  const SizedBox(height: 70,),
 
                   // Confirm Button
                   ElevatedButton(
